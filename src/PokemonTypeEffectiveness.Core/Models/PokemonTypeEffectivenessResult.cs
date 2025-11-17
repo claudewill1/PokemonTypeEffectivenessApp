@@ -12,10 +12,10 @@ namespace PokemonTypeEffectiveness.Core.Models
         public List<string> Types { get; set; } = new();
 
         // List of types that this pokemon is strong against
-        public List<string> StrongAgainst { get; set; } = new();
+        public List<string> StrongAgainstTypes { get; set; } = new();
 
         // List of types that this pokemon is weak against
-        public List<string> WeakAgainst { get; set; } = new();
-        
+        public List<string> WeakAgainstTypes { get; set; } = new();
+
     }
 }
