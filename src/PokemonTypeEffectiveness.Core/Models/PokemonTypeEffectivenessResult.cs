@@ -6,10 +6,10 @@ namespace PokemonTypeEffectiveness.Core.Models
     public class PokemonTypeEffectivenessResult
     {
         // The name of the Pokemon returned by the API
-        public string Pokename { get; set; } = string.Empty;
+        public string PokemonName { get; set; } = string.Empty;
 
         // The types that the pokemon has (e.g. fire, flying)
-        public List<string> Types { get; set; } = new();
+        public List<string> PokemonTypes { get; set; } = new();
 
         // List of types that this pokemon is strong against
         public List<string> StrongAgainstTypes { get; set; } = new();

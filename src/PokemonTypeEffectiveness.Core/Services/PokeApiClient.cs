@@ -35,6 +35,7 @@ namespace PokemonTypeEffectiveness.Core.Services
             var response = await _httpClient.GetAsync(requestUrl);
 
             if (response.StatusCode == HttpStatusCode.NotFound)
+                // Pokemon does not exist within the API
                 return null;
             
             response.EnsureSuccessStatusCode();
@@ -42,9 +43,29 @@ namespace PokemonTypeEffectiveness.Core.Services
             // this allows .DisposeAsync() to be called automatically when code leaves scope
             // Equivalent to await using (var stream = await response.Content.ReadAsStreamAsync())
             await using var stream = await response.Content.ReadAsStreamAsync();
+            var pokemon = await JsonSerializer.DeserializeAsync<PokemonResponse>(stream, _jsonOptions);
+            return pokemon;
+        }
+
+        public async Task<TypeResponse?> GetTypeByNameAsync(string typeName)
+        {
+            if (string.IsNullOrWhiteSpace(typeName))
+                return null;
+            var requestUrl = $"type/{typeName.Trim().ToLowerInvarient()}";
+            
+            var response = await _httpClient.GetAsync(requestUrl);
+
+            if (response.StatusCode == HttpStatusCode.NotFoune)
+                // Type does not exist within the API
+                return null;
+            
+            response.EnsureSuccessStatusCode();
+            await using var stream = await response.Content.ReadAsStreamAsync();
             var type = await JsonSerializer.DeserializeAsync<TypeResponse>(stream, _jsonOptions);
             return type;
+
         }
+        
     }
 
 }
