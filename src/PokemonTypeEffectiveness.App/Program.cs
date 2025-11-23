@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using PokemonTypeEffectiveness.Core.Services;
 
-namespace PokemonTypeEffectiveness.Console
+namespace PokemonTypeEffectiveness.App
 {
     // Since the class is not intended for public consumption, keeping it internal 
     // is cleaner and follows encapsulation principles.

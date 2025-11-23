@@ -9,7 +9,7 @@ using PokemonTypeEffectiveness.Core.Services;
 namespace PokemonTypeEffectiveness.Core.Services
 {
     // The core logic required to convert the relations of type into strengths and weaknesses.
-    public class PokemonTypeEffectivenessService : IPokemonEffectivenessService
+    public class PokemonTypeEffectivenessService : IPokemonTypeEffectivenessService
     {
         private readonly IPokeApiClient _pokeApiClient;
 

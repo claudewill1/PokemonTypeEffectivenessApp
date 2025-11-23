@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokemonTypeEffectiveness.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6962e770d4b7b44c54511870c7055bf5fb826057")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73ea884b4dc387038a0702a5fefcb4ea7196fba2")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokemonTypeEffectiveness.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokemonTypeEffectiveness.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

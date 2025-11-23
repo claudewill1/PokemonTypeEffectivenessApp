@@ -7,7 +7,7 @@ namespace PokemonTypeEffectiveness.Core.Models
     public class PokemonResponse
     {
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         // A list of type slots for the Pokemon
         [JsonPropertyName("types")]

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using PokemonTypeEffectiveness.Core.Models;
 using PokemonTypeEffectiveness.Core.Services;
 
-namespace PokemonTypeEffectiveness.Console
+namespace PokemonTypeEffectiveness.App
 {
     // The user interaction for the console application is handled here.
     public class ConsoleApp
@@ -41,7 +41,7 @@ namespace PokemonTypeEffectiveness.Console
 
                 try
                 {
-                    var result = await _effectivenessService.GetTypeEffectivenessAsync(input.Trim());
+                    var result = await _effectivenessService.GetEffectivenessAsync(input.Trim());
                     PrintResult(result);
                 }
                 catch (ApplicationException ex)
