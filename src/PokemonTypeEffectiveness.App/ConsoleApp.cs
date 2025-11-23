@@ -41,7 +41,7 @@ namespace PokemonTypeEffectiveness.App
 
                 try
                 {
-                    var result = await _effectivenessService.GetTypeEffectivenessAsync(input.Trim());
+                    var result = await _effectivenessService.GetEffectivenessAsync(input.Trim());
                     PrintResult(result);
                 }
                 catch (ApplicationException ex)
