@@ -17,7 +17,7 @@ namespace PokemonTypeEffectiveness.App
             var services = new ServiceCollection();
 
             // Register HttpClient and PokemonApiClient
-            services.AddHttpClient<IPokemonApiClient, PokemonApiClient>(client =>
+            services.AddHttpClient<IPokeApiClient, PokeApiClient>(client =>
             {
                 client.BaseAddress = new Uri("https://pokeapi.co/api/v2/");
             });
