@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
-using PokemonTypeEffectiveness.Code.Models;
+using PokemonTypeEffectiveness.Core.Models;
+using PokemonTypeEffectiveness.Core.Services;
 
 namespace PokemonTypeEffectieness.Core.Services
 {
@@ -11,7 +13,7 @@ namespace PokemonTypeEffectieness.Core.Services
     {
         private readonly IPokeApiClient _pokeApiClient;
 
-        public PokemonTypeEffectivenessService(iPokeApiClient pokeApiClient)
+        public PokemonTypeEffectivenessService(IPokeApiClient pokeApiClient)
         {
             _pokeApiClient = pokeApiClient;
         }
@@ -93,17 +95,60 @@ namespace PokemonTypeEffectieness.Core.Services
                     weak.Add(t.Name);
                 }
             }
-            // Generate stable sorted list for display
-            var strongList = strong
-                .Except(pokemonTypes, StringComparer.OrdinalIgnoreCase)
-                // optionally exclude the pokemon's own types from strengths
-                .OrderBy(t => t)
-                .ToList();
             
-            var weakList = weak
-                .Except(pokemonTypes, StringComparer.OrdinalIgnoreCase)
-                .OrderBy(t => t)
-                .ToList();
+            // Create a list that will store the final "strong against types
+            var strongList  = new List<string>();
+
+            // Iterate through each type the Pokemon is strong against
+            foreach (var type in strong)
+            {
+                // This flag is used to have it checked whether or not a type is one of the Pokemon's own types
+                var isOwnType = false;
+
+                // compare type against pokemon's own types
+                foreach (var pokemonType in pokemonTypes)
+                {
+                    // If type matches a type belonging to the pokemon, mark it so it can be skipped.
+                    if (string.Equals(type, pokemonType, StringComparison.OrdinalIgnoreCase))
+                    {
+                        isOwnType = true;
+                        break; // stop checking for further types since a match was found
+                    }
+                }
+
+                // Add type to the final strong list only if the type is not one of the pokemon's own types
+                if (!isOwnType) strongList.Add(type);
+            }
+            // Sort the strong list alphabetically for clean output (case-insensitive)
+            strongList.Sort(StringComparer.OrdinalIgnoreCase);
+
+            // create list to store final "weak against" types
+            var weakList = new List<string>();
+            // Iterate through each type the Pokemon is strong against
+            foreach (var type in strong)
+            {
+                // This flag is used to have it checked whether or not a type is one of the Pokemon's own types
+                var isOwnType = false;
+
+                // compare type against pokemon's own types
+                foreach (var pokemonType in pokemonTypes)
+                {
+                    // If type matches a type belonging to the pokemon, mark it so it can be skipped.
+                    if (string.Equals(type, pokemonType, StringComparison.OrdinalIgnoreCase))
+                    {
+                        isOwnType = true;
+                        break; // stop checking for further types since a match was found
+                    }
+                }
+
+                // Add type to the final weak list only if the type is not one of the pokemon's own types
+                if (!isOwnType) weakList.Add(type);
+
+                // sort final weak against list alphabetically for cleant output (case-insensitive) 
+            }
+
+            // 
+
 
             // return the result
             return new PokemonTypeEffectivnessResult

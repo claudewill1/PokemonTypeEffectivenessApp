@@ -1,0 +1,5 @@
+C:\Users\claud\source\Repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\claud\source\Repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.AssemblyInfoInputs.cache
+C:\Users\claud\source\Repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.AssemblyInfo.cs
+C:\Users\claud\source\Repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.csproj.CoreCompileInputs.cache
+C:\Users\claud\source\Repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.sourcelink.json
