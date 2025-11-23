@@ -69,7 +69,7 @@ Weak against:
 Once cloned:
 
 ```bash
-dotnet run --project src/PokemonTypeEffectiveness.Console
+dotnet run --project src/PokemonTypeEffectiveness.App
 ```
 
 You will then be prompted to enter a Pokémon name.

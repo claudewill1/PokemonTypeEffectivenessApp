@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using PokemonTypeEffectiveness.Core.Models;
 using PokemonTypeEffectiveness.Core.Services;
 
-namespace PokemonTypeEffectiveness.Console
+namespace PokemonTypeEffectiveness.App
 {
     // The user interaction for the console application is handled here.
     public class ConsoleApp
