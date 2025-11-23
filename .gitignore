@@ -1,0 +1,65 @@
+## Build Folders
+bin/
+obj/
+out/
+Debug/
+Release/
+
+## Visual Studio Files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/
+.history/
+
+## Logs
+*.log
+
+## OS Files
+.DS_Store
+Thumbs.db
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+## DotNet
+*.dll
+*.exe
+*.pdb
+*.cache
+*.mdb
+
+## Azure & Publishing
+*.PublishSettings
+*.pubxml
+*.pubxml.user
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## JetBrains Rider
+.idea/
+
+## Test results
+TestResult.xml
+TestResult/
+TestResults/
+*.coverage
+*.coveragexml
+
+## Temporary files
+*.tmp
+*.temp
+
+# Note:
+# DO NOT ignore any test directories or *.Tests projects.
+# Everything inside your /tests or *.Tests folder WILL be included automatically.

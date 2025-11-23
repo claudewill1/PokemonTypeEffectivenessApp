@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using PokemonTypeEffectiveness.Core.Models;
 using PokemonTypeEffectiveness.Core.Services;
 
-namespace PokemonTypeEffectieness.Core.Services
+namespace PokemonTypeEffectiveness.Core.Services
 {
     // The core logic required to convert the relations of type into strengths and weaknesses.
     public class PokemonTypeEffectivenessService : IPokemonEffectivenessService
@@ -125,7 +125,7 @@ namespace PokemonTypeEffectieness.Core.Services
             // create list to store final "weak against" types
             var weakList = new List<string>();
             // Iterate through each type the Pokemon is strong against
-            foreach (var type in strong)
+            foreach (var type in weak)
             {
                 // This flag is used to have it checked whether or not a type is one of the Pokemon's own types
                 var isOwnType = false;
@@ -151,7 +151,7 @@ namespace PokemonTypeEffectieness.Core.Services
 
 
             // return the result
-            return new PokemonTypeEffectivnessResult
+            return new PokemonTypeEffectivenessResult
             {
                 PokemonName = pokemon.Name,
                 PokemonTypes = pokemonTypes,

@@ -5,9 +5,9 @@ namespace PokemonTypeEffectiveness.Core.Models
     public class NamedApiResource
     {
         [JsonPropertyName("name")]
-        public string name { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
 
         [JsonPropertyName("url")]
-        public string url { get; set; } = string.Empty;
+        public string Url { get; set; } = string.Empty;
     }
 }

@@ -24,13 +24,13 @@ namespace PokemonTypeEffectiveness.Core.Services
             };
         }
 
-        public async Task<PokeRespose?> GetPokemonByNameAsync(string name)
+        public async Task<PokemonResponse?> GetPokemonByNameAsync(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
                 return null;
             
             // Due to the api being case sensitie, normalize the name to lowercase
-            var requestUrl = $"pokemon/{name.Trim().ToLowerInvarient()}";
+            var requestUrl = $"pokemon/{name.Trim().ToLowerInvariant()}";
 
             var response = await _httpClient.GetAsync(requestUrl);
 
@@ -51,11 +51,11 @@ namespace PokemonTypeEffectiveness.Core.Services
         {
             if (string.IsNullOrWhiteSpace(typeName))
                 return null;
-            var requestUrl = $"type/{typeName.Trim().ToLowerInvarient()}";
+            var requestUrl = $"type/{typeName.Trim().ToLowerInvariant()}";
             
             var response = await _httpClient.GetAsync(requestUrl);
 
-            if (response.StatusCode == HttpStatusCode.NotFoune)
+            if (response.StatusCode == HttpStatusCode.NotFound)
                 // Type does not exist within the API
                 return null;
             

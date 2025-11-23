@@ -8,7 +8,7 @@ namespace PokemonTypeEffectiveness.Core.Models
         public int Slot { get; set; }
 
         [JsonPropertyName("type")]
-        public NamedApiResource type { get; set; } = new();
+        public NamedApiResource Type { get; set; } = new();
     }
 }
    

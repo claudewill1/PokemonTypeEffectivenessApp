@@ -3,3 +3,10 @@ C:\Users\claud\source\Repos\PokemonTypeEffectiveness\src\PokemonTypeEffectivenes
 C:\Users\claud\source\Repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.AssemblyInfo.cs
 C:\Users\claud\source\Repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.csproj.CoreCompileInputs.cache
 C:\Users\claud\source\Repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.sourcelink.json
+C:\Users\claud\source\repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\bin\Debug\net8.0\PokemonTypeEffectiveness.Core.deps.json
+C:\Users\claud\source\repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\bin\Debug\net8.0\PokemonTypeEffectiveness.Core.dll
+C:\Users\claud\source\repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\bin\Debug\net8.0\PokemonTypeEffectiveness.Core.pdb
+C:\Users\claud\source\repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.dll
+C:\Users\claud\source\repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\refint\PokemonTypeEffectiveness.Core.dll
+C:\Users\claud\source\repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\PokemonTypeEffectiveness.Core.pdb
+C:\Users\claud\source\repos\PokemonTypeEffectiveness\src\PokemonTypeEffectiveness.Core\obj\Debug\net8.0\ref\PokemonTypeEffectiveness.Core.dll
